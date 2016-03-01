@@ -7309,6 +7309,7 @@ void rs274ngc::convert_spindle_mode(
                 (status != RS274NGC_EXECUTE_FINISH) and
                 (status != RS274NGC_EXIT))
                 throw error(status);
+			block_end();
         }
         else                                      /* blank line is OK */
             status = RS274NGC_OK;

@@ -230,6 +230,7 @@ private:
 	virtual void get_parameter_filename(char* filename, size_t max_size) const =0;
 	virtual Position current_position() const =0;
 	virtual bool queue_empty() const =0;
+	virtual void block_end() =0;
 
 public:
 
