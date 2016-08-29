@@ -52,6 +52,7 @@
 #include "error.h"
 #include "rs274ngc_return.hh"
 #include <algorithm>
+#include <cmath>
 
 block_t::block_t()
 {

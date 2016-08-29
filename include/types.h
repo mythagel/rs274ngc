@@ -27,7 +27,7 @@
 #include <cstddef>
 
 static const size_t RS274NGC_TEXT_SIZE = 256;
-static const size_t RS274NGC_ACTIVE_G_CODES = 12;
+static const size_t RS274NGC_ACTIVE_G_CODES = 15;
 static const size_t RS274NGC_ACTIVE_M_CODES = 7;
 static const size_t RS274NGC_ACTIVE_SETTINGS = 3;
 static const size_t RS274NGC_MAX_PARAMETERS = 5400;
