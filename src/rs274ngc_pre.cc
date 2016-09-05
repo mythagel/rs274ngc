@@ -87,9 +87,10 @@ Significant modifications by Nicholas Gill.
 
 #include <cstdio>
 #include <cstdlib>
-
+#include <cmath>
 #include <cstring>
 #include <cctype>
+
 #include <algorithm>
 #include "rs274ngc.hh"
 #include "rs274ngc_return.hh"
