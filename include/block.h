@@ -25,7 +25,7 @@
 #ifndef BLOCK_H_
 #define BLOCK_H_
 #include <cstddef>
-#include "maybe.h"
+#include <optional>
 
 struct setup_t;
 
@@ -39,33 +39,33 @@ struct block_t
 	void check_m_codes() const;
 	void check_other_codes() const;
 	
-    maybe<double>   x;
-    maybe<double>   y;
-    maybe<double>   z;
-    maybe<double>   a;
-    maybe<double>   b;
-    maybe<double>   c;
+    std::optional<double>   x;
+    std::optional<double>   y;
+    std::optional<double>   z;
+    std::optional<double>   a;
+    std::optional<double>   b;
+    std::optional<double>   c;
     
     char     comment[256];
-    maybe<double>      d;
-    maybe<double>   f;
+    std::optional<double>   d;
+    std::optional<double>   f;
     int      g_modes[15];
-    maybe<unsigned int>      h;
+    std::optional<unsigned int>      h;
     
-    maybe<double>   i;
-    maybe<double>   j;
-    maybe<double>   k;
+    std::optional<double>   i;
+    std::optional<double>   j;
+    std::optional<double>   k;
     
-    maybe<unsigned int>      l;
-    maybe<unsigned int>      line_number;
+    std::optional<unsigned int>      l;
+    std::optional<unsigned int>      line_number;
     int      motion_to_be;
     unsigned int      m_count;
     int      m_modes[10];
-    maybe<double>   p;
-    maybe<double>   q;
-    maybe<double>   r;
-    maybe<double>   s;
-    maybe<unsigned int>      t;
+    std::optional<double>   p;
+    std::optional<double>   q;
+    std::optional<double>   r;
+    std::optional<double>   s;
+    std::optional<unsigned int>      t;
     
     
     std::size_t parameter_occurrence;                     // parameter buffer index
